@@ -24,6 +24,7 @@ gem "table_print"
 gem 'faker'
 gem 'dotenv-rails'
 gem 'devise'
+gem 'stripe'
 
 # Use Active Storage variant
 # gem 'image_processing', '~> 1.2'
