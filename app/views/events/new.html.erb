@@ -1,5 +1,12 @@
 
 <div class="container">
+
+  <% if current_user == nil %>
+
+    <div>You're not connected ! == Impossible to create an event</div>
+
+  <% end %>
+   
   <h1>New Event</h1>
 
   <%= render 'form', event: @event %>

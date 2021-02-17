@@ -29,7 +29,8 @@ class EventsController < ApplicationController
     @event = current_user.events.new(event_params)
 
     if @event.save
-      redirect_to @event, success: "Event enregistré!" 
+      redirect_to @event
+      flash.notice = "Evènement bien enregistré"
     else
       render :new
     end

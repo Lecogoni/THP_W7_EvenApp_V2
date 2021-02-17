@@ -1,6 +1,11 @@
-<p id="notice"><%= notice %></p>
 
 <div class="container">
+
+  <% flash.each do |type, msg| %>
+    <div class="alert alert-success" role="notice">
+      <%= msg %>
+    </div>
+  <% end %>
 
   <p>
     <strong>Title : </strong><%= @event.title%>
