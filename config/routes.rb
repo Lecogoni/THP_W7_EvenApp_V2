@@ -6,6 +6,10 @@ Rails.application.routes.draw do
   resources :users
   resources :events
   resources :charges
+
+  resources :events do
+    resources :participations
+  end
   root 'events#index'
 
 end

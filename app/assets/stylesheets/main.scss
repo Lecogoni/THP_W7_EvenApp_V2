@@ -1,0 +1,30 @@
+
+
+
+.jumbotron {
+   padding: 2rem 1rem;
+   margin-bottom: 2rem;
+   background-color: #d183e1;
+   border-radius: .3rem;
+}
+
+
+
+thead tr{
+ background-color: rgb(200, 197, 200);
+ color: rgb(7, 63, 7);
+}
+
+tbody tr:nth-child(even) {
+ background-color: rgba(184, 184, 182, 0.29);
+}
+
+tbody tr:nth-child(even) {
+ background-color: rgba(184, 184, 182, 0.29);
+}
+
+tbody td:first-child{
+ width: 20%;
+ font-size: 1rem;
+ line-height: 1.4rem;
+}

@@ -2,7 +2,7 @@
 <div class="container">
 
   <% flash.each do |type, msg| %>
-    <div class="alert alert-success" role="notice">
+    <div class="alert alert-info" role="notice">
       <%= msg %>
     </div>
   <% end %>
@@ -29,8 +29,18 @@
     <strong>Owner : </strong><%= @event.user.email%>
   </p>
 
-  <%= link_to 'Edit', edit_event_path(@event) %> |
-  <%= link_to 'Back', events_path %>
+  <div>
+    <%= link_to 'Edit', edit_event_path(@event) %> |
+    <%= link_to 'Back', events_path %>
+  </div>
+  
+  <div class="mt-5">
+   
+
+
+<%= button_to 'Participate', {:controller => "participations", :action => "create", :event_id => @event.id} , :method=>:post  %>
+      
+  </div>
 
 </div>
 
